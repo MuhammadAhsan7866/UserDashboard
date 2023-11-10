@@ -1,0 +1,2981 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <title>Dashboard</title>
+
+  <!-- Custom fonts for this template-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Custom styles for this template-->
+  <link href="css/custom.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+  </script>
+</head>
+
+<body id="page-top">
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-text mx-3">
+          <img src="/img/logo-new.png" alt="" class="log-with">
+        </div>
+      </a>
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">
+          <div class="navLinkWrap">
+            <i class="fa fa-home Navicon" aria-hidden="true"></i>
+            <span>Dashboard</span>
+          </div>
+        </a>
+      </li>
+
+      <!-- Nav Item - Pages Collapse Menu -->
+
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" id="switchButton3">
+          <div class="navLinkWrap">
+            <i class="fa fa-user Navicon" aria-hidden="true"></i>
+            <span>Trading Accounts</span>
+          </div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" id="switchButton3">
+          <div class="navLinkWrap">
+            <i class="fa fa-user Navicon" aria-hidden="true"></i>
+            <span id="switchButton15">Trading Platform</span>
+
+          </div>
+        </a>
+      </li>
+      <!-- Deposit new -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseseven" aria-expanded="true"
+          aria-controls="collapseseven">
+          <div class="navLinkWrap">
+            <i class="fa fa-usd Navicon" aria-hidden="true"></i>
+            <span>Deposit</span>
+          </div>
+
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </a>
+        <div id="collapseseven" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-custom py-2 collapse-inner rounded">
+
+            <a class="collapse-item" id="switchButton9" href="#">Deposit now</a>
+            <a class="collapse-item" id="switchButton10" href="#">Deposit Status</a>
+          </div>
+        </div>
+      </li>
+      <!-- Deposit new Emd -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+          aria-controls="collapseTwo">
+          <div class="navLinkWrap">
+            <i class="fa fa-usd Navicon" aria-hidden="true"></i>
+            <span>My Payouts</span>
+          </div>
+
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-custom py-2 collapse-inner rounded">
+
+            <a class="collapse-item" id="switchButton4" href="#">Withdraw Now</a>
+            <a class="collapse-item" id="switchButton5" href="#">Withdraw Status</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="nav-item" id="switchButton8">
+        <a class="nav-link collapsed" href="#">
+          <div class="navLinkWrap">
+            <i class="fa fa-address-card Navicon" aria-hidden="true"></i>
+            <span> Analysis & Tools</span>
+          </div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
+          aria-controls="collapseThree">
+          <div class="navLinkWrap">
+            <i class="fa fa-usd Navicon" aria-hidden="true"></i>
+            <span>Social Trading</span>
+          </div>
+
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </a>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-custom py-2 collapse-inner rounded">
+
+            <a class="collapse-item" href="#">Social Trading Account</a>
+            <a class="collapse-item" href="#">Social Trading Provider</a>
+            <a class="collapse-item" href="#">Social Trading Login</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsenew" aria-expanded="true"
+          aria-controls="collapsenew">
+          <div class="navLinkWrap">
+            <i class="fa fa-usd Navicon" aria-hidden="true"></i>
+            <span>Discovery</span>
+          </div>
+
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </a>
+        <div id="collapsenew" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-custom py-2 collapse-inner rounded">
+
+
+            <a class="collapse-item" id="switchButton51" href="#">Technical Analysis</a>
+            <a class="collapse-item" id="switchButton16" href="#">Currency Converter</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item" id="switchButton7">
+        <a class="nav-link collapsed" href="#">
+          <div class="navLinkWrap">
+            <i class="fa fa-address-card Navicon" aria-hidden="true"></i>
+            <span>KYC</span>
+          </div>
+        </a>
+      </li>
+
+
+
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline sidebarPlus">
+        <span class="rounded-circle border-0">
+          <i id="sidebarToggle" class="fa fa-plus-square" aria-hidden="true"></i>
+        </span>
+      </div>
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+      <!-- Main Content -->
+      <div id="content">
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light topbar mb-4 static-top shadow">
+          <!-- Sidebar Toggle (Topbar) -->
+         
+
+          <!-- Topbar Navbar -->
+          <div class="avatar_cus">
+        <img src="/img/nova.png" alt="" class="nva">
+            <div class="profile">
+              <div class="user">
+                <h3>Kamran Ali</h3>
+              
+              </div>
+              <div class="img-box">
+                <img src="https://i.postimg.cc/BvNYhMHS/user-img.jpg" alt="some user image">
+              </div>
+            </div>
+            <div class="menucus">
+              <ul>
+                <li><a href="user-profile.html"><i class="ph-bold ph-user"></i>&nbsp;Profile</a></li>
+                <li><a href="#"><i class="ph-bold ph-gear-six"></i>&nbsp;Settings</a></li>
+                <li><a href="#"><i class="ph-bold ph-sign-out"></i>&nbsp;Sign Out</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="body-pge">
+          <!-- Live Screen -->
+          <div class="button-inner-page" id="screen2">
+            <div class="container-fluid">
+              <div class="card  h-100">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="card-ttle">
+                        <p> Request a New Trading Account
+                        </p>
+                      </div>
+                      <div class="custom mt-3">
+                        <form action="" id="form2">
+                          <div class="mb-3">
+                            <label class="form-label">Selecione Uma opçao</label>
+                            <select class="selectpicker form-control" title="Selecione uma opçao">
+                              <option value="1">Live</option>
+                            </select>
+                          </div>
+                          <button type="button" class="open-btn" id="myBtn">Get Trading Account</button>
+                        </form>
+
+                        <div class="resultado"></div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="maintable">
+                <div class="title-table mt-lg-5">
+                  <h1>Trading Accounts</h1>
+                </div>
+              </div>
+              <div class="table-trans">
+
+                <table id="responsive-data-table" class="table dt-responsive nowrap" style="width:100%">
+                  <thead>
+                    <tr>
+                      <th>ID </th>
+                      <th>Account ID </th>
+                      <th>Password</th>
+                      <th>Investor Pasword</th>
+                      <th>Type</th>
+                      <th>Group</th>
+                      <th>Leverage</th>
+                      <th>Created at</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>99123</td>
+                      <td>bQVgM4!#</td>
+                      <td>fCeA3qx? </td>
+                      <td>
+                        <div class="live">
+                          <p>Live</p>
+                        </div>
+                      </td>
+                      <td>Standard</td>
+                      <td>
+                        <div class="levergae">
+                          <p>100</p>
+                        </div>
+                      </td>
+                      <td>05-Oct-2023 </td>
+                      <td>
+                        <div class="btns-ivestor">
+                          <button>Change Password</button>
+
+                        </div>
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+          <!-- Demo Screen -->
+          <div class="button-inner-page" id="demo">
+            <div class="container-fluid">
+              <div class="card  h-100">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="card-ttle">
+                        <p> Request a New Trading Account
+                        </p>
+                      </div>
+                      <div class="custom mt-3">
+                        <form action="" id="form2">
+                          <div class="mb-3">
+                            <label class="form-label">Selecione Uma opçao</label>
+                            <select class="selectpicker form-control" title="Selecione uma opçao">
+                              <option value="1">Demo</option>
+                            </select>
+                          </div>
+                          <button type="submit" class="open-btn">Get Trading Account</button>
+                        </form>
+
+                        <div class="resultado"></div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="maintable">
+                <div class="title-table mt-lg-5">
+                  <h1>Trading Accounts</h1>
+                </div>
+              </div>
+              <div class="table-trans">
+
+                <table id="responsive-data-table" class="table dt-responsive nowrap" style="width:100%">
+                  <thead>
+                    <tr>
+                      <th>ID </th>
+                      <th>Account ID </th>
+                      <th>Password</th>
+                      <th>Investor Pasword</th>
+                      <th>Type</th>
+                      <th>Group</th>
+                      <th>Leverage</th>
+                      <th>Created at</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>99123</td>
+                      <td>bQVgM4!#</td>
+                      <td>fCeA3qx? </td>
+                      <td>
+                        <div class="live">
+                          <p>Live</p>
+                        </div>
+                      </td>
+                      <td>Standard</td>
+                      <td>
+                        <div class="levergae">
+                          <p>100</p>
+                        </div>
+                      </td>
+                      <td>05-Oct-2023 </td>
+                      <td>
+                        <div class="btns-ivestor">
+                          <button>Change Password</button>
+
+                        </div>
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+          <!-- Demo screen End  -->
+          <!-- Trading Account -->
+          <div class="button-inner-page" id="trading">
+            <div class="container-fluid">
+              <div class="card  h-100">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="card-ttle">
+                        <p> Request a New Trading Account
+                        </p>
+                      </div>
+                      <div class="custom mt-3 trade-item">
+                        <div class="form-trade">
+                          <form action="" id="form3">
+                            <div class="mb-3">
+                              <label class="form-label text-label">Account Type*</label>
+                              <select class="selectpicker form-control frm" title="Selecione uma opçao">
+                                <option value="1">Demo</option>
+                                <option value="1">Live</option>
+                              </select>
+                            </div>
+
+                          </form>
+                          <button class="open-btn" data-toggle="modal" data-target="#smallModaltwo">Get Trading
+                            Account</button>
+                        </div>
+
+                        <form action="" id="form3">
+                          <div class="mb-3">
+                            <label class="form-label text-label">Live Account Type*</label>
+                            <select class="selectpicker form-control frm" title="Selecione uma opçao">
+                              <option value="1">Standard</option>
+                              <option value="1">Pro</option>
+                              <option value="1">ECN</option>
+                              <option value="1">Zero</option>
+                            </select>
+                          </div>
+
+                        </form>
+                        <div class="resultado"></div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="maintable">
+                <div class="title-table mt-lg-5">
+                  <h1>Trading Accounts</h1>
+                </div>
+              </div>
+              <div class="table-trans">
+
+                <table id="responsive-data-table" class="table dt-responsive nowrap" style="width:100%">
+                  <thead>
+                    <tr>
+                      <th>ID </th>
+                      <th>Account ID </th>
+                      <!-- <th>Password</th>
+                      <th>Investor Pasword</th> -->
+                      <th>Type</th>
+                      <th>Group</th>
+                      <th>Leverage</th>
+                      <th>Created at</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>99123</td>
+                      <!-- <td>bQVgM4!#</td>
+                      <td>fCeA3qx? </td> -->
+                      <td>
+                        <div class="live">
+                          <p>Live</p>
+                        </div>
+                      </td>
+                      <td>Standard</td>
+                      <td>
+                        <div class="levergae">
+                          <p>100</p>
+                        </div>
+                      </td>
+                      <td>05-Oct-2023 </td>
+                      <td>
+                        <div class="btns-ivestor">
+                          <button>Change Password</button>
+
+                        </div>
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Deposits sidebar clicking -->
+          <div class="button-inner-page" id="Deposits">
+            <div class="container-fluid">
+              <div class="card  h-100">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="card-ttle">
+                        <p> Deposit
+                        </p>
+                      </div>
+                      <div class="custom mt-3 trade-item">
+                        <div class="form-trade6">
+                          <form action="" id="form3">
+                            <div class="mb-3">
+                              <select class="selectpicker form-control frm" title="Selecione uma opçao">
+                                <option value="1">Select Trading Account</option>
+
+                              </select>
+                            </div>
+
+                          </form>
+                          <form action="" id="form3">
+                            <div class="mb-3">
+                              <select>
+                                <option value="1">Select Merchant</option>
+                                <option value="1" id="switchButton61">Tether/USDT TRC20</option>
+                                <option value="1" id="switchButton62">BitCoin</option>
+                                <option value="1" id="switchButton63">TopUp</option>
+                                <option value="1" id="switchButton64">Tron - TRX</option>
+                                <option value="1" id="switchButton65">Perfect Money</option>
+                                <option value="1" id="switchButton66">DogeCoin</option>
+                                <option value="1" id="switchButton67">Binanece - BNB</option>
+                                <option value="1" id="switchButton68">Steller - XLM </option>
+                                <option value="1" id="switchButton69">Shiba Inu - SHIB</option>
+                                <option value="1" id="switchButton70">Prometeus - PROM</option>
+                                <option value="1" id="switchButton71">Ripple - XRP</option>
+                                <option value="1" id="switchButton72">Cardano - ADA</option>
+
+                              </select>
+                              <input type="number" placeholder="Enter amount to be deposit" class="amint">
+                              <div class="screensht" id="option1Content">
+                                <input type="text" name="" id="" placeholder="TX ID">
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="form-groupddd">
+
+                                      <div class="file-upload">
+                                        <button class="btn-upload">
+                                          <span class="text-browse">Browse..</span>
+                                          <span class="text-file-name">No file selected</span>
+                                        </button>
+                                        <i class="fa fa-camera i-pic-upload"></i>
+                                        <i class="i-deselect"></i>
+                                        <input type="file" class="form-control d-none" id="s-pic">
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+
+
+                          </form>
+                          <button class="open-btn">Peoceed to deposit</button>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              >
+
+
+            </div>
+
+          </div>
+          <!-- Deposit sidebar clicking End  -->
+
+          <!-- withdraw sidebar clicking -->
+          <div class="button-inner-page" id="withdrawnow">
+
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12">
+                  <ul class="nav nav-pills">
+                    <li class="nav-item-sys">
+                      <a class="nav-link newwest active" data-toggle="pill" href="#flamingo" role="tab"
+                        aria-controls="pills-flamingo" aria-selected="true">Withdraw</a>
+                    </li>
+                    <li class="nav-item-sys">
+                      <a class="nav-link newwest" data-toggle="pill" href="#cuckoo" role="tab"
+                        aria-controls="pills-cuckoo" aria-selected="false">Add Payment Method</a>
+                    </li>
+
+
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane fade show active" id="flamingo" role="tabpanel" aria-labelledby="flamingo-tab">
+                      <div class="card  h-100 mt-4">
+                        <div class="card-body">
+                          <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+
+                              <div class="custom mt-3 trade-item">
+                                <div class="form-trade6">
+                                  <form action="" id="form3">
+                                    <div class="mb-3">
+                                      <select class="selectpicker form-control frm" title="Selecione uma opçao">
+                                        <option value="1">Please Select</option>
+
+                                      </select>
+                                      <form action="" id="form3">
+                                        <div class="mt-3">
+                                          <select class="selectpicker form-control frm" title="Selecione uma opçao">
+                                            <option value="1">Select Payment Method</option>
+    
+    
+                                          </select>
+                                        </div>
+    
+                                      </form>
+                                      <input type="number" placeholder="Enter amount to be withdrawal" class="mt-3">
+                                      
+                                      <textarea class="textarea mt-3" ng-model="text2" placeholder="Write Comment" style="width: 100%; height: 50px;"></textarea>
+                                    </div>
+
+                                  </form>
+                                 
+
+                                  <button class="open-btn" id="myBtn2">Proceed to Withdrawal</button>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="cuckoo" role="tabpanel" aria-labelledby="profile-tab">
+                      <div class="card  h-100 mt-4">
+                        <div class="card-body">
+                          <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+
+                              <div class="custom mt-3 trade-item">
+                                <div class="form-trade6">
+                                  <form action="" id="form3">
+                                    <div class="mb-3">
+                                      <select class="selectpicker form-control frm" title="Selecione uma opçao">
+                                        <option value="1">Please Select</option>
+
+                                      </select>
+                                      <form action="" id="form3 ">
+                                        <div class="my-3">
+                                          <select class="selectpicker form-control frm" title="Selecione uma opçao">
+                                            <option value="1">Select Payment Method</option>
+                                            <option id="switchButton12">Wire transfer</option>
+                                            <option>Bit Coin</option>
+                                            <option>Perfect Money</option>
+                                            <option>USDT / Tether</option>
+                                            <option>Doge Coin</option>
+                                            <option>BNB</option>
+                                            <option>ETH</option>
+                                            <option>XLM</option>
+                                            <option>SHIB</option>
+                                            <option>PROM</option>
+                                            <option>XRP</option>
+                                            <option>ADA</option>
+                                            <option>TRX</option>
+
+                                          </select>
+                                        </div>
+
+                                      </form>
+                                      <input type="text" placeholder="Enter Wallet Adress" >
+                                      <input type="text" placeholder="Enter Account Title" class="my-3">
+                                      
+                                    
+                                    </div>
+
+                                  </form>
+
+
+                                  <button class="open-btn" id="myBtn2">Submit</button>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="button-inner-page-n">
+                        <div class="container-fluid">
+                          <!-- Filter Total Sum -->
+                        
+                          <!-- Filter End  -->
+              
+                          <div class="table-trans">
+              
+                            <table id="responsive-data-table" class="table dt-responsive nowrap" style="width:100%">
+                              <thead>
+                                <tr>
+                                  <th>ID </th>
+                                  <th>Account ID </th>
+                                  <th>Username</th>
+                                  <th>Demo / Live</th>
+                                  <th>Payment Method</th>
+                                  <th>Wallet Adress</th>
+                                 
+                                  <th></th>
+                                  <th>Account Title</th>
+                                  <th>Action </th>
+                                </tr>
+                              </thead>
+              
+                              <tbody>
+                                <tr>
+                                  <td>1</td>
+                                  <td>99123</td>
+                                  <td>Ahmed123</td>
+                                  <td>
+                                    <div class="live">
+                                      <p>Live</p>
+                                    </div>
+                                  </td>
+                                  <td>Wire Transfer</td>
+                                  <td>
+                                    fVeg6stiTb5Kh3ozCSkaqmx91FDbsm
+                                  </td>
+                                 
+                                  <td>
+              
+                                  </td>
+                                  <td>Junaid Mirza </td>
+                                  <td>
+                                    <button class="edt">Edit</button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>1</td>
+                                  <td>99123</td>
+                                  <td>Ahmed123</td>
+                                  <td>
+                                    <div class="live">
+                                      <p>Live</p>
+                                    </div>
+                                  </td>
+                                  <td>Wire Transfer</td>
+                                  <td>
+                                    fVeg6stiTb5Kh3ozCSkaqmx91FDbsm
+                                  </td>
+                                 
+                                  <td>
+              
+                                  </td>
+                                  <td>Junaid Mirza </td>
+                                  <td>
+                                    <button class="edt">Edit</button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>1</td>
+                                  <td>99123</td>
+                                  <td>Ahmed123</td>
+                                  <td>
+                                    <div class="live">
+                                      <p>Live</p>
+                                    </div>
+                                  </td>
+                                  <td>Wire Transfer</td>
+                                  <td>
+                                    fVeg6stiTb5Kh3ozCSkaqmx91FDbsm
+                                  </td>
+                                 
+                                  <td>
+              
+                                  </td>
+                                  <td>Junaid Mirza </td>
+                                  <td>
+                                    <button class="edt">Edit</button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>1</td>
+                                  <td>99123</td>
+                                  <td>Ahmed123</td>
+                                  <td>
+                                    <div class="live">
+                                      <p>Live</p>
+                                    </div>
+                                  </td>
+                                  <td>Wire Transfer</td>
+                                  <td>
+                                    fVeg6stiTb5Kh3ozCSkaqmx91FDbsm
+                                  </td>
+                                 
+                                  <td>
+              
+                                  </td>
+                                  <td>Junaid Mirza </td>
+                                  <td>
+                                    <button class="edt">Edit</button>
+                                  </td>
+                                </tr>
+                              </tbody>
+              
+                            </table>
+                          </div>
+                        </div>
+              
+                      </div>
+                     
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+            <!-- ==== 1 ==== -->
+
+            <!-- Bit Coin Wallet Adress-->
+            <!-- input When the user clicks on 'Wallet,' the current div currently displayed should hide, and the div below it should appear. Additionally, the modal should close after clicking this button -->
+            <!-- <div class="container-fluid">
+              <div class="card  h-100">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="card-ttle-gate">
+                        <p> Bitcoin
+                        </p>
+                       <div class="gateway-inp">
+                        <input type="text" name="" id="" placeholder="Your Bit Coin Wallet Adress">
+                       </div>
+                       <div class="updte">
+                         <button>Update Details</button>
+                       </div>
+                      </div>
+                     
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+             
+            </div> -->
+
+            <!--Bit Coin Wallet Adress End -->
+
+            <!-- ==== 2 ==== -->
+
+            <!--Perfect Money Adress -->
+
+            <!-- input When the user clicks on 'Wallet,' the current div currently displayed should hide, and the div below it should appear. Additionally, the modal should close after clicking this button -->
+            <!-- <div class="container-fluid">
+              <div class="card  h-100">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="card-ttle-gate">
+                        <p> Perfect Money ID
+                        </p>
+                       <div class="gateway-inp">
+                        <input type="text" name="" id="" placeholder="Your Perfect Money ID">
+                       </div>
+                       <div class="updte">
+                         <button>Update Details</button>
+                       </div>
+                      </div>
+                     
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+             
+            </div> -->
+
+            <!--Perfect Money Adress End -->
+
+            <!-- ==== 3 ==== -->
+
+            <!--Usdt/Tether Wallet Adress -->
+
+            <!-- input When the user clicks on 'Wallet,' the current div currently displayed should hide, and the div below it should appear. Additionally, the modal should close after clicking this button -->
+            <!-- <div class="container-fluid">
+              <div class="card  h-100">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="card-ttle-gate">
+                        <p> Usdt/Tether Wallet
+                        </p>
+                       <div class="gateway-inp">
+                        <input type="text" name="" id="" placeholder="Your Usdt/Tether Wallet Adress">
+                       </div>
+                       <div class="updte">
+                         <button>Update Details</button>
+                       </div>
+                      </div>
+                     
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+             
+            </div> -->
+
+            <!--Usdt/Tether Wallet Adress End -->
+
+            <!-- ==== 4 ==== -->
+
+            <!--DogeCoin Wallet Adress -->
+
+            <!-- input When the user clicks on 'Wallet,' the current div currently displayed should hide, and the div below it should appear. Additionally, the modal should close after clicking this button -->
+            <!-- <div class="container-fluid">
+              <div class="card  h-100">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="card-ttle-gate">
+                        <p> DogeCoin Wallet
+                        </p>
+                       <div class="gateway-inp">
+                        <input type="text" name="" id="" placeholder="Your DogeCoin Wallet Adress">
+                       </div>
+                       <div class="updte">
+                         <button>Update Details</button>
+                       </div>
+                      </div>
+                     
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+             
+            </div> -->
+
+            <!--DogeCoin Wallet Adress End -->
+
+            <!-- ==== 5 ==== -->
+
+            <!--BNB Wallet Wallet Adress -->
+
+            <!-- input When the user clicks on 'Wallet,' the current div currently displayed should hide, and the div below it should appear. Additionally, the modal should close after clicking this button -->
+            <!-- <div class="container-fluid">
+              <div class="card  h-100">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="card-ttle-gate">
+                        <p> BNB Wallet
+                        </p>
+                       <div class="gateway-inp">
+                        <input type="text" name="" id="" placeholder="Your BNB Wallet Adress">
+                       </div>
+                       <div class="updte">
+                         <button>Update Details</button>
+                       </div>
+                      </div>
+                     
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+             
+            </div> -->
+
+            <!--BNB Wallet Adress End -->
+
+            <!-- ==== 6 ==== -->
+
+            <!--ETH Wallet Wallet Adress -->
+
+            <!-- input When the user clicks on 'Wallet,' the current div currently displayed should hide, and the div below it should appear. Additionally, the modal should close after clicking this button -->
+            <!-- <div class="container-fluid">
+              <div class="card  h-100">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="card-ttle-gate">
+                        <p> ETH Wallet
+                        </p>
+                       <div class="gateway-inp">
+                        <input type="text" name="" id="" placeholder="Your ETH Wallet Adress">
+                       </div>
+                       <div class="updte">
+                         <button>Update Details</button>
+                       </div>
+                      </div>
+                     
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+             
+            </div> -->
+
+            <!--ETH Wallet Adress End -->
+
+            <!-- ==== 7 ==== -->
+
+            <!--XLM Wallet Wallet Adress -->
+
+            <!-- input When the user clicks on 'Wallet,' the current div currently displayed should hide, and the div below it should appear. Additionally, the modal should close after clicking this button -->
+            <!-- <div class="container-fluid">
+              <div class="card  h-100">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="card-ttle-gate">
+                        <p> XLM Wallet
+                        </p>
+                       <div class="gateway-inp">
+                        <input type="text" name="" id="" placeholder="Your XLM Wallet Adress">
+                       </div>
+                       <div class="updte">
+                         <button>Update Details</button>
+                       </div>
+                      </div>
+                     
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+             
+            </div> -->
+
+            <!--XLM Wallet Adress End -->
+
+
+            <!-- ==== 8 ==== -->
+
+            <!--SHIB Wallet Wallet Adress -->
+
+            <!-- input When the user clicks on 'Wallet,' the current div currently displayed should hide, and the div below it should appear. Additionally, the modal should close after clicking this button -->
+            <!-- <div class="container-fluid">
+              <div class="card  h-100">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="card-ttle-gate">
+                        <p> SHIB Wallet
+                        </p>
+                       <div class="gateway-inp">
+                        <input type="text" name="" id="" placeholder="Your SHIB Wallet Adress">
+                       </div>
+                       <div class="updte">
+                         <button>Update Details</button>
+                       </div>
+                      </div>
+                     
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+             
+            </div> -->
+
+            <!--SHIB Wallet Adress End -->
+
+
+            <!-- ==== 9 ==== -->
+
+            <!--PROM Wallet Wallet Adress -->
+
+            <!-- input When the user clicks on 'Wallet,' the current div currently displayed should hide, and the div below it should appear. Additionally, the modal should close after clicking this button -->
+            <!-- <div class="container-fluid">
+              <div class="card  h-100">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="card-ttle-gate">
+                        <p> PROM Wallet
+                        </p>
+                       <div class="gateway-inp">
+                        <input type="text" name="" id="" placeholder="Your PROM Wallet Adress">
+                       </div>
+                       <div class="updte">
+                         <button>Update Details</button>
+                       </div>
+                      </div>
+                     
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+             
+            </div> -->
+
+            <!--PROM Wallet Adress End -->
+
+
+            <!-- ==== 10 ==== -->
+
+            <!--XRP Wallet Wallet Adress -->
+
+            <!-- input When the user clicks on 'Wallet,' the current div currently displayed should hide, and the div below it should appear. Additionally, the modal should close after clicking this button -->
+            <!-- <div class="container-fluid">
+              <div class="card  h-100">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="card-ttle-gate">
+                        <p> XRP Wallet
+                        </p>
+                       <div class="gateway-inp">
+                        <input type="text" name="" id="" placeholder="Your XRP Wallet Adress">
+                       </div>
+                       <div class="updte">
+                         <button>Update Details</button>
+                       </div>
+                      </div>
+                     
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+             
+            </div> -->
+
+            <!--XRP  Wallet Adress End -->
+
+
+            <!-- ==== 11 ==== -->
+
+            <!--ADA Wallet Wallet Adress -->
+
+            <!-- input When the user clicks on 'Wallet,' the current div currently displayed should hide, and the div below it should appear. Additionally, the modal should close after clicking this button -->
+            <!-- <div class="container-fluid">
+              <div class="card  h-100">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="card-ttle-gate">
+                        <p> ADA Wallet
+                        </p>
+                       <div class="gateway-inp">
+                        <input type="text" name="" id="" placeholder="Your ADA Wallet Adress">
+                       </div>
+                       <div class="updte">
+                         <button>Update Details</button>
+                       </div>
+                      </div>
+                     
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+             
+            </div> -->
+
+            <!--ADA  Wallet Adress End -->
+
+
+            <!-- ==== 11 ==== -->
+
+            <!--TRX Wallet Wallet Adress -->
+
+            <!-- input When the user clicks on 'Wallet,' the current div currently displayed should hide, and the div below it should appear. Additionally, the modal should close after clicking this button -->
+            <!-- <div class="container-fluid">
+              <div class="card  h-100">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="card-ttle-gate">
+                        <p> TRX Wallet
+                        </p>
+                       <div class="gateway-inp">
+                        <input type="text" name="" id="" placeholder="Your TRX Wallet Adress">
+                       </div>
+                       <div class="updte">
+                         <button>Update Details</button>
+                       </div>
+                      </div>
+                     
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+             
+            </div> -->
+
+            <!--TRX  Wallet Adress End -->
+
+          </div>
+          <!-- withdraw sidebar clicking End -->
+          <!-- KYC Screen Start -->
+          <div class="button-inner-page" id="KYC">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-xl-5 col-md-6 mb-4">
+                  <div class="card" style="height: 95%;">
+                    <div class="card-body">
+                      <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                          <div class="card-ttle">
+                            <p>Upload Document
+                            </p>
+                          </div>
+                          <div class="form-trade7">
+                            <form action="" id="form3">
+                              <div class="mb-3 mt-lg-5">
+                                <label class="form-label text-label">Name*</label>
+                                <select class="selectpicker form-control frm" title="Selecione uma opçao">
+                                  <option value="1">National Id</option>
+                                  <option value="1">Passport</option>
+                                  <option value="1">Driving Licence</option>
+                                  <option value="1">Utillity Bill</option>
+                                </select>
+                              </div>
+
+                            </form>
+                            <form class="form-container" enctype='multipart/form-data'>
+                              <div class="upload-files-container">
+                                <div class="drag-file-area">
+                                  <span class="material-icons-outlined upload-icon"> file_upload </span>
+                                  <h3 class="dynamic-message"> Drag & drop any file here </h3>
+                                  <label class="label"> or <span class="browse-files"> <input type="file"
+                                        class="default-file-input" /> <span class="browse-files-text">browse file</span>
+                                      <span>from device</span> </span> </label>
+                                </div>
+                                <span class="cannot-upload-message"> <span class="material-icons-outlined">error</span>
+                                  Please select a file first <span
+                                    class="material-icons-outlined cancel-alert-button">cancel</span> </span>
+                                <div class="file-block">
+                                  <div class="file-info"> <span
+                                      class="material-icons-outlined file-icon">description</span> <span
+                                      class="file-name"> </span> | <span class="file-size"> </span> </div>
+                                  <span class="material-icons remove-file-icon">delete</span>
+                                  <div class="progress-bar"> </div>
+                                </div>
+                                <button type="button" class="upload-button"> Upload </button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-7 col-md-6 mb-4">
+                  <!-- SimpleFX widget MARKET OVERVIEW - START -->
+                  <!-- TradingView Widget BEGIN -->
+                  <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/"
+                        rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on
+                          TradingView</span></a></div>
+                    <script type="text/javascript"
+                      src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
+                        {
+                          "width": 700,
+                            "height": 600,
+                              "currencies": [
+                                "EUR",
+                                "USD",
+                                "JPY",
+                                "GBP",
+                                "CHF",
+                                "AUD",
+                                "CAD",
+                                "NZD"
+                              ],
+                                "isTransparent": false,
+                                  "colorTheme": "dark",
+                                    "locale": "en"
+                        }
+                      </script>
+                  </div>
+                  <!-- TradingView Widget END -->
+                  <!-- SimpleFX widget - END -->
+                </div>
+                <div class="col-xl-12 col-md-6 mb-4">
+
+                  <div class="table-trans">
+
+                    <table id="responsive-data-table" class="table dt-responsive nowrap" style="width:100%">
+                      <thead>
+                        <tr>
+                          <th>ID </th>
+                          <th>Type</th>
+                          <th>Document</th>
+                          <th>Status</th>
+                          <th>Uploaded On </th>
+                          <th>Action</th>
+                          <th>Reason</th>
+
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td> No Record Found</td>
+                          <td>
+                          </td>
+                          <td></td>
+                          <td>
+                          </td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+          <!-- KYC Screen End  -->
+
+          <!--  Analysis & Tools -->
+
+          <div class="button-inner-page" id="Analysis">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6">
+                  <iframe id="iframeforexQuotesWidget"
+                    src="https://widget.myfxbook.com/widget/market-quotes.html?symbols=AUDUSD,EURGBP,EURUSD,GBPUSD,USDCAD,USDCHF,USDJPY"
+                    style="border: 0px; position: relative; height: 396.5px; width: 100%;"
+                    allowtransparency="true"></iframe>
+                </div>
+                <div class="col-md-6">
+                  <div class="card  h-100">
+                    <div class="card-body calculate">
+                      <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                          <div class="card-ttle">
+                            <p> Analysis Tools
+
+                            </p>
+                          </div>
+                          <h1>Forex Currency Profit/Loss calculator</h1>
+                          <div class="calculator calculator--large calculator--pl">
+
+                            <form onsubmit="return profitLoss(event);" id="pl-calculator">
+
+
+                              <div class="calculator__row">
+                                <label for="acc-ccy">Account Currency</label>
+                                <select name="" id="acct-ccy">
+                                  <option value="USD">USD</option>
+                                  <option value="EUR">EUR</option>
+                                  <option value="GBP">GBP</option>
+                                  <option value="CHF">CHF</option>
+                                  <option value="JPY">JPY</option>
+                                  <option value="AUD">AUD</option>
+                                </select>
+                              </div>
+                              <div class="calculator__row">
+                                <label for="opening-price">Opening Price</label>
+                                <input type="text" id="opening-price">
+                              </div>
+                              <div class="calculator__row">
+                                <label for="buy-sell">Buy or Sell?</label>
+                                <select name="" id="buy-sell">
+                                  <option value="Buy">Buy</option>
+                                  <option value="Sell">Sell</option>
+                                </select>
+                              </div>
+
+                              <div class="calculator__row">
+                                <label for="currency-pair">Currency pair</label>
+                                <select name="" id="currency-pair">
+                                  <option value="EURUSD">EURUSD</option>
+                                  <option value="EURGBP">EURGBP</option>
+                                  <option value="GBPUSD">GBPUSD</option>
+                                  <option value="USDJPY">USDJPY</option>
+                                  <option value="EURJPY">EURJPY</option>
+                                  <option value="AUDUSD">AUDUSD</option>
+                                  <option value="AUDCAD">AUDCAD</option>
+                                  <option value="AUDCHF">AUDCHF</option>
+                                  <option value="AUDJPY">AUDJPY</option>
+                                  <option value="AUDNZD">AUDNZD</option>
+                                  <option value="AUDSGD">AUDSGD</option>
+                                  <option value="CADCHF">CADCHF</option>
+                                  <option value="CADJPY">CADJPY</option>
+                                  <option value="CADSGD">CADSGD</option>
+                                  <option value="CHFJPY">CHFJPY</option>
+                                  <option value="CHFSGD">CHFSGD</option>
+                                  <option value="EURAUD">EURAUD</option>
+                                  <option value="EURCAD">EURCAD</option>
+                                  <option value="EURCHF">EURCHF</option>
+                                  <option value="EURDKK">EURDKK</option>
+                                  <option value="EURHKD">EURHKD</option>
+                                  <option value="EURMXN">EURMXN</option>
+                                  <option value="EURNOK">EURNOK</option>
+                                  <option value="EURNZD">EURNZD</option>
+                                  <option value="EURPLN">EURPLN</option>
+                                  <option value="EURSEK">EURSEK</option>
+                                  <option value="EURSGD">EURSGD</option>
+                                  <option value="EURTRY">EURTRY</option>
+                                  <option value="GBPAUD">GBPAUD</option>
+                                  <option value="GBPCAD">GBPCAD</option>
+                                  <option value="GBPCHF">GBPCHF</option>
+                                  <option value="GBPJPY">GBPJPY</option>
+                                  <option value="GBPNOK">GBPNOK</option>
+                                  <option value="GBPNZD">GBPNZD</option>
+                                  <option value="GBPSEK">GBPSEK</option>
+                                  <option value="GBPSGD">GBPSGD</option>
+                                  <option value="HKDJPY">HKDJPY</option>
+                                  <option value="NOKJPY">NOKJPY</option>
+                                  <option value="NOKSEK">NOKSEK</option>
+                                  <option value="NZDCAD">NZDCAD</option>
+                                  <option value="NZDCHF">NZDCHF</option>
+                                  <option value="NZDJPY">NZDJPY</option>
+                                  <option value="NZDSGD">NZDSGD</option>
+                                  <option value="NZDUSD">NZDUSD</option>
+                                  <option value="SEKJPY">SEKJPY</option>
+                                  <option value="SGDJPY">SGDJPY</option>
+                                  <option value="USDCAD">USDCAD</option>
+                                  <option value="USDCHF">USDCHF</option>
+                                  <option value="USDCNH">USDCNH</option>
+                                  <option value="USDDKK">USDDKK</option>
+                                  <option value="USDHKD">USDHKD</option>
+                                  <option value="USDMXN">USDMXN</option>
+                                  <option value="USDNOK">USDNOK</option>
+                                  <option value="USDPLN">USDPLN</option>
+                                  <option value="USDRUB">USDRUB</option>
+                                  <option value="USDSEK">USDSEK</option>
+                                  <option value="USDSGD">USDSGD</option>
+                                  <option value="USDTRY">USDTRY</option>
+                                </select>
+                              </div>
+
+                              <div class="calculator__row">
+                                <label for="closing-price">Closing price</label>
+                                <input type="text" id="closing-price">
+                              </div>
+
+                              <div class="calculator__row">
+                                <label for="lot-size">Lot size</label>
+                                <input type="text" id="lot-size">
+                              </div>
+
+                              <div class="calculator--grey">
+                                <label for="quote">AC/Quote Currency</label>
+                                <!-- THIS FIELD NEEDS A DYNAMIC VALUE -->
+                                <input type="text" value="1.1025" disabled id="quote">
+                              </div>
+
+                              <div class="calculator__footer">
+                                <input type="submit" value="Calculate" class="calculator__button">
+
+                                <div class="calculator__result">
+                                  <div class="calculator__result__half-height">
+                                    <label for="profit-loss-pips">pips</label>
+                                    <input type="text" id="profit-loss-pips" readonly>
+                                  </div>
+                                  <div class="calculator__result__half-height">
+                                    <label for="profit-loss-acc-ccy" class="currencySymbol">$</label>
+                                    <input type="text" id="profit-loss-acc-ccy" readonly>
+                                  </div>
+                                </div>
+
+                              </div>
+
+                            </form>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+
+            </div>
+
+          </div>
+          <!-- Analysis & Tools End -->
+
+          <!-- Trading Account End -->
+          <div class="container-fluid mt5 screen" id="screen1">
+            <div class="container-fluid mt5  ">
+              <!-- Content Row -->
+              <div class="row">
+
+                <!-- After logging in, the user will see the following div for verification.  -->
+
+                <!-- <div class="verification-alert">
+                  <div class="inner-alert">
+                    <div class="dec">
+                      <h2>ID Verification</h2>
+                      <p>Complete identity verification, assist in opening an account, and unlock transaction permissions.</p>
+                    </div>
+                   
+                    <button>ID Verification</button>
+                  </div>
+                  
+                </div> -->
+                <div class="rowarea">
+                  <div class="col-md-5">
+                    <div class=" dir-col">
+                      <div class="noto-card ">
+                        <div class="bdy-card">
+                          <div class="card-ttle">
+                            <p> Create Live Accounts</p>
+                          </div>
+                          <div class="row no-gutters align-items-center">
+                            <div class="col-auto">
+                              <p class="p mb-0 color-text">
+                                We offer multiple account types to meet your individual investment.
+                              </p>
+
+                              <div class="candles">
+                                <button class="open-btn " id="switchButton">Open Live Account</button>
+                                <img src="/img/ffffff-removebg-preview.png" alt="candles">
+                              </div>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+                      </div>
+
+                      <div class="noto-card ">
+                        <div class="bdy-card">
+                          <div class="card-ttle">
+                            <p> Demo Account</p>
+                          </div>
+                          <div class="row no-gutters align-items-center">
+                            <div class="col-auto">
+                              <p class="p mb-0 color-text">
+                                Made Deposit to your account to start Trading and Earn Money</p>
+                              <div class="candles">
+                                <button class="open-btn " id="switchButton2">Open Demo Account</button>
+                                <img src="/img/demoacc.png" alt="demoacc">
+                              </div>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-md-7">
+                    <div class="inner-card">
+                      <img src="/img/gggg.png" alt="" class="img-fluid">
+                      <div class="noto-card lenght ">
+                        <div class="bdy-card">
+                          <div class="card-ttle">
+                            <p> Deposit to Account</p>
+                          </div>
+                          <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                              <div class="row no-gutters align-items-center">
+                                <div class="col-auto">
+                                  <p class="p mb-0 color-text text-w">
+                                    Visit to understand the Live Market Situation using the provided tools. </p>
+                                  <div class="candles">
+                                    <button class="open-btn mt-lg-4 ">Deposit Now</button>
+                                    <img src="/img/deposit-icon.png" alt="deposit" class="mt-4">
+                                  </div>
+
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+                <div class="col-md-12">
+                  <div class="iframe-data">
+                    <h1>Transaction History</h1>
+                    <div class="details">
+                      <iframe id="iframeforexQuotesWidget"
+                        src="https://widget.myfxbook.com/widget/market-quotes.html?symbols=AUDUSD,EURGBP,EURUSD,GBPUSD,USDCAD,USDCHF,USDJPY"
+                        style="border: 0px; position: relative; height: 396.5px; width: 100%;"
+                        allowtransparency="true"></iframe>
+                    </div>
+                  </div>
+                </div>
+                <!-- Earnings (Monthly) Card Example -->
+
+                <!-- Pending Requests Card Example -->
+
+              </div>
+
+            </div>
+            <div class="maintable">
+              <div class="title-table mt-lg-5">
+                <h1>Trading Accounts</h1>
+              </div>
+            </div>
+            <div class="table-trans">
+
+              <table id="responsive-data-table" class="table dt-responsive nowrap" style="width:100%">
+                <thead>
+                  <tr>
+                    <th>ID </th>
+                    <th>Account ID </th>
+                    <th>Password</th>
+                    <th>Investor Pasword</th>
+                    <th>Type</th>
+                    <th>Group</th>
+                    <th>Leverage</th>
+                    <th>Created at</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>99123</td>
+                    <td>bQVgM4!#</td>
+                    <td>fCeA3qx? </td>
+                    <td>
+                      <div class="live">
+                        <p>Live</p>
+                      </div>
+                    </td>
+                    <td>Standard</td>
+                    <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td>
+                    <td>05-Oct-2023 </td>
+                    <td>
+                      <div class="btns-ivestor">
+                        <button>Change Password</button>
+                        <!-- <button>Change Password</button> -->
+                      </div>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+
+          <!-- Discovery Start -->
+
+          <div class="container-fluid mt5 screen" id="screen12">
+            <div class="container-fluid mt5  ">
+              <!-- Content Row -->
+              <div class="dis-cov">
+                <div class="title-pro-trade">
+                  <h2>Zen Pro Trader Platform</h2>
+                  <p>And Ultimate Performer</p>
+                  <button>Download Now</button>
+                </div>
+                <img src="/img/forex-lap.png" alt="laptop">
+              </div>
+              <div class="trde-view">
+                <h2>Trading View</h2>
+                <p>Everything is absolutely free. No registration, no subscribe – nothing whatever. All you need is to
+                  copy HTML-code and simply paste it to your site or blog!</p>
+              </div>
+              <div class="grid-crd">
+                <div class="chart">
+                  <img src="/img/crt.png" alt="crt">
+                  <div class="prg">
+                    <ul>
+                      <li>
+                        <p>Technical Analysis Tools</p>
+                      </li>
+                      <li>
+                        <p>Custom Indicators</p>
+                      </li>
+                      <li>
+                        <p>Multiple Timeframes</p>
+                      </li>
+                      <li>
+                        <p>Real-time Quotes</p>
+                      </li>
+                      <li>
+                        <p>Trading Alerts and Signals
+                        </p>
+                      </li>
+                      <li>
+                        <p>Trading Alerts and Signals
+                        </p>
+                      </li>
+                      <li>
+                        <p>Security and Stability</p>
+                      </li>
+                    </ul>
+
+                  </div>
+
+                </div>
+                <div class="double-crd">
+                  <div class="chartmulti">
+                    <div class="inner_prt">
+                      <img src="/img/bult.png" alt="crt">
+                      <div class="prg">
+                        <p>Multiple Time Frames</p>
+
+                      </div>
+                    </div>
+
+
+                  </div>
+                  <div class="chartbuilt">
+                    <div class="inner_prt">
+                      <img src="/img/crt.png" alt="crt">
+                      <div class="prg">
+                        <p>Built-in marketPlace coverage</p>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Currency Converter -->
+
+          <div class="button-inner-page" id="Currency">
+            <div class="container-fluid">
+              <div class="row">
+
+                <div class="col-md-12">
+                  <div class="card  h-100">
+                    <div class="card-body calculate">
+                      <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                          <div class="card-ttle">
+                            <p> Currency Converter
+
+                            </p>
+                          </div>
+                          <h1>Forex Currency Profit/Loss calculator</h1>
+                          <div class="calculator2 calculator--large calculator--pl">
+
+                            <form onsubmit="return profitLoss(event);" id="pl-calculator">
+
+
+                              <div class="calculator__row">
+                                <label for="acc-ccy">Account Currency</label>
+                                <select name="" id="acct-ccy">
+                                  <option value="USD">USD</option>
+                                  <option value="EUR">EUR</option>
+                                  <option value="GBP">GBP</option>
+                                  <option value="CHF">CHF</option>
+                                  <option value="JPY">JPY</option>
+                                  <option value="AUD">AUD</option>
+                                </select>
+                              </div>
+                              <div class="calculator__row">
+                                <label for="opening-price">Opening Price</label>
+                                <input type="text" id="opening-price">
+                              </div>
+                              <div class="calculator__row">
+                                <label for="buy-sell">Buy or Sell?</label>
+                                <select name="" id="buy-sell">
+                                  <option value="Buy">Buy</option>
+                                  <option value="Sell">Sell</option>
+                                </select>
+                              </div>
+
+                              <div class="calculator__row">
+                                <label for="currency-pair">Currency pair</label>
+                                <select name="" id="currency-pair">
+                                  <option value="EURUSD">EURUSD</option>
+                                  <option value="EURGBP">EURGBP</option>
+                                  <option value="GBPUSD">GBPUSD</option>
+                                  <option value="USDJPY">USDJPY</option>
+                                  <option value="EURJPY">EURJPY</option>
+                                  <option value="AUDUSD">AUDUSD</option>
+                                  <option value="AUDCAD">AUDCAD</option>
+                                  <option value="AUDCHF">AUDCHF</option>
+                                  <option value="AUDJPY">AUDJPY</option>
+                                  <option value="AUDNZD">AUDNZD</option>
+                                  <option value="AUDSGD">AUDSGD</option>
+                                  <option value="CADCHF">CADCHF</option>
+                                  <option value="CADJPY">CADJPY</option>
+                                  <option value="CADSGD">CADSGD</option>
+                                  <option value="CHFJPY">CHFJPY</option>
+                                  <option value="CHFSGD">CHFSGD</option>
+                                  <option value="EURAUD">EURAUD</option>
+                                  <option value="EURCAD">EURCAD</option>
+                                  <option value="EURCHF">EURCHF</option>
+                                  <option value="EURDKK">EURDKK</option>
+                                  <option value="EURHKD">EURHKD</option>
+                                  <option value="EURMXN">EURMXN</option>
+                                  <option value="EURNOK">EURNOK</option>
+                                  <option value="EURNZD">EURNZD</option>
+                                  <option value="EURPLN">EURPLN</option>
+                                  <option value="EURSEK">EURSEK</option>
+                                  <option value="EURSGD">EURSGD</option>
+                                  <option value="EURTRY">EURTRY</option>
+                                  <option value="GBPAUD">GBPAUD</option>
+                                  <option value="GBPCAD">GBPCAD</option>
+                                  <option value="GBPCHF">GBPCHF</option>
+                                  <option value="GBPJPY">GBPJPY</option>
+                                  <option value="GBPNOK">GBPNOK</option>
+                                  <option value="GBPNZD">GBPNZD</option>
+                                  <option value="GBPSEK">GBPSEK</option>
+                                  <option value="GBPSGD">GBPSGD</option>
+                                  <option value="HKDJPY">HKDJPY</option>
+                                  <option value="NOKJPY">NOKJPY</option>
+                                  <option value="NOKSEK">NOKSEK</option>
+                                  <option value="NZDCAD">NZDCAD</option>
+                                  <option value="NZDCHF">NZDCHF</option>
+                                  <option value="NZDJPY">NZDJPY</option>
+                                  <option value="NZDSGD">NZDSGD</option>
+                                  <option value="NZDUSD">NZDUSD</option>
+                                  <option value="SEKJPY">SEKJPY</option>
+                                  <option value="SGDJPY">SGDJPY</option>
+                                  <option value="USDCAD">USDCAD</option>
+                                  <option value="USDCHF">USDCHF</option>
+                                  <option value="USDCNH">USDCNH</option>
+                                  <option value="USDDKK">USDDKK</option>
+                                  <option value="USDHKD">USDHKD</option>
+                                  <option value="USDMXN">USDMXN</option>
+                                  <option value="USDNOK">USDNOK</option>
+                                  <option value="USDPLN">USDPLN</option>
+                                  <option value="USDRUB">USDRUB</option>
+                                  <option value="USDSEK">USDSEK</option>
+                                  <option value="USDSGD">USDSGD</option>
+                                  <option value="USDTRY">USDTRY</option>
+                                </select>
+                              </div>
+
+                              <div class="calculator__row">
+                                <label for="closing-price">Closing price</label>
+                                <input type="text" id="closing-price">
+                              </div>
+
+                              <div class="calculator__row">
+                                <label for="lot-size">Lot size</label>
+                                <input type="text" id="lot-size">
+                              </div>
+
+                              <div class="calculator--grey">
+                                <label for="quote">AC/Quote Currency</label>
+                                <!-- THIS FIELD NEEDS A DYNAMIC VALUE -->
+                                <input type="text" value="1.1025" disabled="" id="quote">
+                              </div>
+
+                              <div class="calculator__footer">
+                                <input type="submit" value="Calculate" class="calculator__button">
+
+                                <div class="calculator__result">
+                                  <div class="calculator__result__half-height">
+                                    <label for="profit-loss-pips">pips</label>
+                                    <input type="text" id="profit-loss-pips" readonly="">
+                                  </div>
+                                  <div class="calculator__result__half-height">
+                                    <label for="profit-loss-acc-ccy" class="currencySymbol">$</label>
+                                    <input type="text" id="profit-loss-acc-ccy" readonly="">
+                                  </div>
+                                </div>
+
+                              </div>
+
+                            </form>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+
+            </div>
+
+          </div>
+
+          <!-- Technical Anaylsis -->
+
+          <div class="container-fluid m-auto" id="custom-tec">
+            <div class="tabs effect-3">
+              <!-- tab-title -->
+              <input type="radio" id="tab-1" name="tab-effect-3" checked="checked">
+              <span>Forex </span>
+
+              <input type="radio" id="tab-2" name="tab-effect-3">
+              <span>Commodities</span>
+
+              <input type="radio" id="tab-3" name="tab-effect-3">
+              <span>Indices</span>
+
+              <input type="radio" id="tab-4" name="tab-effect-3">
+              <span>Shre Cfds</span>
+
+
+              <div class="line ease"></div>
+
+              <!-- tab-content -->
+              <div class="tab-content">
+                <section id="tab-item-1">
+                  <div class="card-container">
+                    <!-- Cards go here -->
+                    <div class="card-cu">
+                      <!-- TradingView Widget BEGIN -->
+                      <!-- TradingView Widget BEGIN -->
+                      <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/"
+                            rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on
+                              TradingView</span></a></div>
+                        <script type="text/javascript"
+                          src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+                            {
+                              "interval": "1D",
+                                "width": "100%",
+                                  "isTransparent": false,
+                                    "height": "450",
+                                      "symbol": "FX:EURCAD",
+                                        "showIntervalTabs": true,
+                                          "displayMode": "single",
+                                            "locale": "en",
+                                              "colorTheme": "dark"
+                            }
+                          </script>
+                      </div>
+                      <!-- TradingView Widget END -->
+                      <!-- TradingView Widget END -->
+                    </div>
+                    <div class="card-cu">
+                      <!-- TradingView Widget BEGIN -->
+                      <!-- TradingView Widget BEGIN -->
+                      <!-- TradingView Widget BEGIN -->
+                      <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/"
+                            rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on
+                              TradingView</span></a></div>
+                        <script type="text/javascript"
+                          src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+                            {
+                              "interval": "1D",
+                                "width": "100%",
+                                  "isTransparent": false,
+                                    "height": "450",
+                                      "symbol": "OANDA:NZDUSD",
+                                        "showIntervalTabs": true,
+                                          "displayMode": "single",
+                                            "locale": "en",
+                                              "colorTheme": "dark"
+                            }
+                          </script>
+                      </div>
+                      <!-- TradingView Widget END -->
+                      <!-- TradingView Widget END -->
+                      <!-- TradingView Widget END -->
+                    </div>
+                    <div class="card-cu">
+                      <!-- TradingView Widget BEGIN -->
+                      <!-- TradingView Widget BEGIN -->
+                      <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/"
+                            rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on
+                              TradingView</span></a></div>
+                        <script type="text/javascript"
+                          src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+                            {
+                              "interval": "1D",
+                                "width": "100%",
+                                  "isTransparent": false,
+                                    "height": "450",
+                                      "symbol": "FX:USDCAD",
+                                        "showIntervalTabs": true,
+                                          "displayMode": "single",
+                                            "locale": "en",
+                                              "colorTheme": "dark"
+                            }
+                          </script>
+                      </div>
+                      <!-- TradingView Widget END -->
+                      <!-- TradingView Widget END -->
+                    </div>
+
+                  </div>
+                </section>
+                <section id="tab-item-2">
+                  <div class="card-container">
+                    <!-- Cards go here -->
+                    <div class="card-cu">
+                      <!-- TradingView Widget BEGIN -->
+                      <!-- TradingView Widget BEGIN -->
+                      <!-- TradingView Widget BEGIN -->
+                      <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/"
+                            rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on
+                              TradingView</span></a></div>
+                        <script type="text/javascript"
+                          src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+                            {
+                              "interval": "1D",
+                                "width": "100%",
+                                  "isTransparent": false,
+                                    "height": "450",
+                                      "symbol": "NASDAQ:NDAQ",
+                                        "showIntervalTabs": true,
+                                          "displayMode": "single",
+                                            "locale": "en",
+                                              "colorTheme": "dark"
+                            }
+                          </script>
+                      </div>
+                      <!-- TradingView Widget END -->
+                      <!-- TradingView Widget END -->
+                      <!-- TradingView Widget END -->
+                    </div>
+                    <div class="card-cu">
+                      <!-- TradingView Widget BEGIN -->
+                      <!-- TradingView Widget BEGIN -->
+                      <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/"
+                            rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on
+                              TradingView</span></a></div>
+                        <script type="text/javascript"
+                          src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+                            {
+                              "interval": "1D",
+                                "width": "100%",
+                                  "isTransparent": false,
+                                    "height": "450",
+                                      "symbol": "NYMEX:NG1!",
+                                        "showIntervalTabs": true,
+                                          "displayMode": "single",
+                                            "locale": "en",
+                                              "colorTheme": "dark"
+                            }
+                          </script>
+                      </div>
+                      <!-- TradingView Widget END -->
+                      <!-- TradingView Widget END -->
+                    </div>
+                    <div class="card-cu">
+                      <!-- TradingView Widget BEGIN -->
+                      <!-- TradingView Widget BEGIN -->
+                      <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/"
+                            rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on
+                              TradingView</span></a></div>
+                        <script type="text/javascript"
+                          src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+                            {
+                              "interval": "1D",
+                                "width": "100%",
+                                  "isTransparent": false,
+                                    "height": "450",
+                                      "symbol": "BX:HG1",
+                                        "showIntervalTabs": true,
+                                          "displayMode": "single",
+                                            "locale": "en",
+                                              "colorTheme": "dark"
+                            }
+                          </script>
+                      </div>
+                      <!-- TradingView Widget END -->
+                      <!-- TradingView Widget END -->
+                    </div>
+
+                  </div>
+                </section>
+                <section id="tab-item-3">
+                  <div class="card-container">
+                    <!-- Cards go here -->
+                    <div class="card-cu">
+                      <!-- TradingView Widget BEGIN -->
+                      <!-- TradingView Widget BEGIN -->
+                      <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/"
+                            rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on
+                              TradingView</span></a></div>
+                        <script type="text/javascript"
+                          src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+                            {
+                              "interval": "1D",
+                                "width": "100%",
+                                  "isTransparent": false,
+                                    "height": "450",
+                                      "symbol": "NASDAQ:NDAQ",
+                                        "showIntervalTabs": true,
+                                          "displayMode": "single",
+                                            "locale": "en",
+                                              "colorTheme": "dark"
+                            }
+                          </script>
+                      </div>
+                      <!-- TradingView Widget END -->
+                      <!-- TradingView Widget END -->
+                    </div>
+                    <div class="card-cu">
+                      <!-- TradingView Widget BEGIN -->
+                      <!-- TradingView Widget BEGIN -->
+                      <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/"
+                            rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on
+                              TradingView</span></a></div>
+                        <script type="text/javascript"
+                          src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+                            {
+                              "interval": "1D",
+                                "width": "100%",
+                                  "isTransparent": false,
+                                    "height": "450",
+                                      "symbol": "TVC:DJI",
+                                        "showIntervalTabs": true,
+                                          "displayMode": "single",
+                                            "locale": "en",
+                                              "colorTheme": "dark"
+                            }
+                          </script>
+                      </div>
+                      <!-- TradingView Widget END -->
+                      <!-- TradingView Widget END -->
+                    </div>
+                    <div class="card-cu">
+                      <!-- TradingView Widget BEGIN -->
+                      <!-- TradingView Widget BEGIN -->
+                      <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/"
+                            rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on
+                              TradingView</span></a></div>
+                        <script type="text/javascript"
+                          src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+                            {
+                              "interval": "1D",
+                                "width": "100%",
+                                  "isTransparent": false,
+                                    "height": "450",
+                                      "symbol": "TVC:NYA",
+                                        "showIntervalTabs": true,
+                                          "displayMode": "single",
+                                            "locale": "en",
+                                              "colorTheme": "dark"
+                            }
+                          </script>
+                      </div>
+                      <!-- TradingView Widget END -->
+                      <!-- TradingView Widget END -->
+                    </div>
+
+                  </div>
+                </section>
+                <section id="tab-item-4">
+                  <div class="card-container">
+                    <!-- Cards go here -->
+                    <div class="card-cu">
+                      <!-- TradingView Widget BEGIN -->
+                      <!-- TradingView Widget BEGIN -->
+                      <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/"
+                            rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on
+                              TradingView</span></a></div>
+                        <script type="text/javascript"
+                          src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+                            {
+                              "interval": "1D",
+                                "width": "100%",
+                                  "isTransparent": false,
+                                    "height": "450",
+                                      "symbol": "NYSE:BAC",
+                                        "showIntervalTabs": true,
+                                          "displayMode": "single",
+                                            "locale": "en",
+                                              "colorTheme": "dark"
+                            }
+                          </script>
+                      </div>
+                      <!-- TradingView Widget END -->
+                      <!-- TradingView Widget END -->
+                    </div>
+                    <div class="card-cu">
+                      <!-- TradingView Widget BEGIN -->
+                      <!-- TradingView Widget BEGIN -->
+                      <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/"
+                            rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on
+                              TradingView</span></a></div>
+                        <script type="text/javascript"
+                          src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+                            {
+                              "interval": "1D",
+                                "width": "100%",
+                                  "isTransparent": false,
+                                    "height": "450",
+                                      "symbol": "NASDAQ:INTC",
+                                        "showIntervalTabs": true,
+                                          "displayMode": "single",
+                                            "locale": "en",
+                                              "colorTheme": "dark"
+                            }
+                          </script>
+                      </div>
+                      <!-- TradingView Widget END -->
+                      <!-- TradingView Widget END -->
+                    </div>
+                    <div class="card-cu">
+                      <!-- TradingView Widget BEGIN -->
+                      <!-- TradingView Widget BEGIN -->
+                      <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/"
+                            rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on
+                              TradingView</span></a></div>
+                        <script type="text/javascript"
+                          src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+                            {
+                              "interval": "1D",
+                                "width": "100%",
+                                  "isTransparent": false,
+                                    "height": "450",
+                                      "symbol": "BMV:C",
+                                        "showIntervalTabs": true,
+                                          "displayMode": "single",
+                                            "locale": "en",
+                                              "colorTheme": "dark"
+                            }
+                          </script>
+                      </div>
+                      <!-- TradingView Widget END -->
+                      <!-- TradingView Widget END -->
+                    </div>
+
+                  </div>
+                </section>
+
+              </div>
+            </div>
+
+            <div class="content-area">
+              <div class="list-name-widgets">
+                <div class="title-descr">
+                  <h2>Currency Analytics
+                  </h2>
+                  <p>To open a widget in a popup window just select your currency pair below and start using it with any
+                    trading platform.
+                  </p>
+                  <div class="listed-wig">
+                    <ul>
+                      <li>
+                        AUDUSD
+                      </li>
+                      <li>
+                        AUDUSD
+                      </li>
+                      <li>
+                        AUDUSD
+                      </li>
+                      <li>
+                        AUDUSD
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        AUDUSD
+                      </li>
+                      <li>
+                        AUDUSD
+                      </li>
+                      <li>
+                        AUDUSD
+                      </li>
+                      <li>
+                        AUDUSD
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="button-inner-page" id="depostatus">
+          <div class="container-fluid">
+            <!-- Filter Total Sum -->
+            <div class="maintable">
+              <div class="title-total-figure">
+                <div class="figure-credit">
+                  <div class="figure-icon">
+                    <div class="totl-depo">
+                      <span>Total deposits</span>
+                      <p>35,000$</p>
+                    </div>
+
+                    <img src="/img/count-removebg-preview.png" alt="count">
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Month Years Filters -->
+
+              <div class="filters-alerts">
+                <button class="rgbss ">Today</button>
+                <button class="rgbss ">7 Days</button>
+                <button class="rgbss ">15 Days</button>
+                <button class="rgbss ">30 Days</button>
+                <div class="clnd">
+                  <input type="date" name="dateofbirth" id="dateofbirth">
+                  <p>From</p>
+                  <input type="date" name="dateofbirth" id="dateofbirth">
+                </div>
+
+              </div>
+
+              <!-- Months filter End -->
+
+              <div class="title-table mt-lg-5 d-flex justify-content-between align-items-center rslts">
+                <h1>Total Deposits Status</h1>
+                <div class="filtr">
+                  <p>Filter Results</p>
+
+
+                  <!-- Custom Dropdown Selection -->
+
+                  <div class="selectcus">
+                    <div class="selectBtn" data-type="firstOption">Pending</div>
+                    <div class="selectDropdown">
+                      <div class="option" data-type="firstOption">Pending</div>
+                      <!-- <div class="option" data-type="secondOption" data-toggle="modal" data-target="#smallModalappro">Approved</div>
+                      <div class="option" data-type="thirdOption" data-toggle="modal" data-target="#smallModalcable">Cancled</div> -->
+                      <div class="option">Approved</div>
+                      <div class="option">Cancled</div>
+                    </div>
+                  </div>
+
+
+                </div>
+
+              </div>
+            </div>
+            <!-- Filter End  -->
+
+            <div class="table-trans">
+
+              <table id="responsive-data-table" class="table dt-responsive nowrap" style="width:100%">
+                <thead>
+                  <tr>
+                    <th>ID </th>
+                    <th>Account ID </th>
+                    <th>Username</th>
+                    <th>Withdraw Amount</th>
+                    <th>Wallet Adress</th>
+                    <th>TRX ID</th>
+                    <th></th>
+                    <th>Date | Time</th>
+                    <th>Status </th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>99123</td>
+                    <td>Ahmed123</td>
+                    <td>
+                      <div class="live">
+                        <p>1000$</p>
+                      </div>
+                    </td>
+                    <td>
+                      fVeg6stiTb5Kh3ozCSkaqmx91FDbsm
+                    </td>
+                    <td>15454548</td>
+                    <td>
+
+                    </td>
+                    <td>05-Oct-2023 </td>
+                    <td>
+                      <div class="apr">
+                        <p>Approved</p>
+
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>99123</td>
+                    <td>Ahmed123</td>
+                    <td>
+                      <div class="live">
+                        <p>1000$</p>
+                      </div>
+                    </td>
+                    <td>
+                      fVeg6stiTb5Kh3ozCSkaqmx91FDbsm
+                    </td>
+                    <td>15454548</td>
+                    <td>
+
+                    </td>
+                    <td>05-Oct-2023 </td>
+                    <td>
+                      <div class="apr2">
+                        <p>Pending</p>
+
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>99123</td>
+                    <td>Ahmed123</td>
+                    <td>
+                      <div class="live">
+                        <p>1000$</p>
+                      </div>
+                    </td>
+                    <td>
+                      fVeg6stiTb5Kh3ozCSkaqmx91FDbsm
+                    </td>
+                    <td>15454548</td>
+                    <td>
+
+                    </td>
+                    <td>05-Oct-2023 </td>
+                    <td>
+                      <div class="apr3">
+                        <p>Cancled</p>
+
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+
+              </table>
+            </div>
+          </div>
+
+        </div>
+
+        <!--  Withdraw Status -->
+
+        <div class="button-inner-page" id="Withdrawstatus">
+          <div class="container-fluid">
+            <!-- Filter Total Sum -->
+            <div class="maintable">
+              <div class="title-total-figure">
+
+                <div class="figure-credit">
+                  <div class="figure-icon">
+                    <div class="totl-depo">
+                      <span>Total Withdraw</span>
+                      <p>35,000$</p>
+                    </div>
+
+                    <img src="/img/count-removebg-preview.png" alt="count">
+                  </div>
+                </div>
+                <!-- Month Years Filters -->
+
+                <div class="filters-alerts">
+                  <button class="rgbss ">Today</button>
+                  <button class="rgbss ">7 Days</button>
+                  <button class="rgbss ">15 Days</button>
+                  <button class="rgbss ">30 Days</button>
+                  <div class="clnd">
+                    <input type="date" name="dateofbirth" id="dateofbirth">
+                    <p>From</p>
+                    <input type="date" name="dateofbirth" id="dateofbirth">
+                  </div>
+
+                </div>
+
+                <!-- Months filter End -->
+              </div>
+              <div class="title-table mt-lg-5 d-flex justify-content-between align-items-center">
+                <h1>Total Withdraws Status</h1>
+                <div class="filtr">
+                  <p>Filter Results</p>
+                  <!-- Custom Dropdown Selection -->
+
+                  <div class="selectcus">
+                    <div class="selectBtn" data-type="firstOption">Pending</div>
+                    <div class="selectDropdown">
+                      <div class="option" data-type="firstOption">Pending</div>
+                      <div class="option" data-type="secondOption" data-toggle="modal" data-target="#smallModalappro">
+                        Approved</div>
+                      <div class="option" data-type="thirdOption">Cancled</div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Filter End  -->
+
+          <div class="table-trans">
+
+            <table id="responsive-data-table" class="table dt-responsive nowrap" style="width:100%">
+              <thead>
+                <tr>
+                  <th>ID </th>
+                  <th>Account ID </th>
+                  <th>Username</th>
+                  <th>Withdraw Amount</th>
+                  <th>Wallet Adress</th>
+                  <th>TRX ID</th>
+                  <th></th>
+                  <th>Date | Time</th>
+                  <th>Status </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>99123</td>
+                  <td>Ahmed123</td>
+                  <td>
+                    <div class="live">
+                      <p>1000$</p>
+                    </div>
+                  </td>
+                  <td>
+                    fVeg6stiTb5Kh3ozCSkaqmx91FDbsm
+                  </td>
+                  <td>15454548</td>
+                  <td>
+
+                  </td>
+                  <td>05-Oct-2023 </td>
+                  <td>
+                    <div class="apr">
+                      <p>Approved</p>
+
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>99123</td>
+                  <td>Ahmed123</td>
+                  <td>
+                    <div class="live">
+                      <p>1000$</p>
+                    </div>
+                  </td>
+                  <td>
+                    fVeg6stiTb5Kh3ozCSkaqmx91FDbsm
+                  </td>
+                  <td>15454548</td>
+                  <td>
+
+                  </td>
+                  <td>05-Oct-2023 </td>
+                  <td>
+                    <div class="apr2">
+                      <p>Pending</p>
+
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>99123</td>
+                  <td>Ahmed123</td>
+                  <td>
+                    <div class="live">
+                      <p>1000$</p>
+                    </div>
+                  </td>
+                  <td>
+                    fVeg6stiTb5Kh3ozCSkaqmx91FDbsm
+                  </td>
+                  <td>15454548</td>
+                  <td>
+
+                  </td>
+                  <td>05-Oct-2023 </td>
+                  <td>
+                    <div class="apr3">
+                      <p>Cancled</p>
+
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+
+            </table>
+          </div>
+
+
+        </div>
+
+      </div>
+      <!-- /.container-fluid -->
+
+    </div>
+
+    <!-- Earnings (Monthly) Card Example -->
+
+
+    <!-- Pending Requests Card Example -->
+
+  </div>
+
+  </div>
+  <!-- /.container-fluid -->
+  </div>
+
+  <!-- End of Main Content -->
+  </div>
+  <!-- End of Content Wrapper -->
+  </div>
+  <!-- End of Page Wrapper -->
+  <!-- The Modal -->
+  <div id="myModal" class="modal shw">
+
+    <!-- Modal content -->
+    <div class="modal-contentnew">
+      <div class="declartion-hed">
+        <h2>Declaration</h2>
+        <span class="close">&times;</span>
+      </div>
+      <div class="description-modal">
+        <p> am over 18 and declare that the information provided by me during the account opening process is true and
+          correct and undertake to notify you, in writing, if there are any changes to this data. I guarantee that I do
+          not breach any regulations of my country of residence in trading with Promax LLC.
+
+          I fully understand the nature and risks of trading Forex and other derivatives. I confirm I have read,
+          understood and agree to be bound by all the Promax LLC statements, policies and agreements of the Business.
+        </p>
+        <form action="/action_page.php">
+          <input type="checkbox" id="myCheckbox" name="vehicle1" value="Bike">
+          <label for="vehicle1">I confirm I have read, understood and agree to AML Policy, Client Agreement, Fraud
+            Warning, Privacy Policy, Risk Disclaimer and Terms and Conditions agreements. I also confirm that I
+            understand the full nature and risks involved in trading Forex, CFDs and other derivative
+            products.</label>
+
+        </form>
+      </div>
+      <div class="footer-modl">
+        <div class="btnsM">
+          <button class="cls ">Close</button>
+          <button id="loading-button" onclick="startLoading()" disabled>Get now</button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <!-- Add Payment Method Modal -->
+  <div class="modal fade" id="smallModal" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+    <div class="modal-dialog customidialog ">
+      <div class="modal-content-cus">
+        <div class="modal-header">
+          <div class="title-date">
+            <h2>Select Payment Method
+            </h2>
+          </div>
+          <button type="button" class="closenew" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="descrtipn-alert">
+            <p>Select payment method you want to add. You can add more than one payment method which can be used to
+              withdraw funds.</p>
+          </div>
+          <div class="all-pyments-btn">
+            <button id="switchButton12">Wire transfer</button>
+            <button>Bit Coin</button>
+            <button>Perfect Money</button>
+            <button>USDT / Tether</button>
+            <button>Doge Coin</button>
+            <button>BNB</button>
+            <button>ETH</button>
+            <button>XLM</button>
+            <button>SHIB</button>
+            <button>PROM</button>
+            <button>XRP</button>
+            <button>ADA</button>
+            <button>TRX</button>
+          </div>
+          <div class="modal-footercustom">
+            <button type="button" class="no-btn" data-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Approved Modal -->
+
+  <div class="modal fade" id="smallModalappro" tabindex="-1" role="dialog" aria-labelledby="largeModal"
+    aria-hidden="true">
+    <div class="modal-dialog customidialog ">
+      <div class="modal-content-cus">
+        <div class="modal-header">
+          <div class="title-date">
+            <h2>Approved
+            </h2>
+          </div>
+          <button type="button" class="closenew" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="descrtipn-alert">
+            <h3>Do you Want to Approved</h3>
+          </div>
+          <div class="modal-footercustom">
+            <button type="button" class="no-btn" data-dismiss="modal">No</button>
+            <button type="button" class="yes-alert">Yes</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Cancle Modal  -->
+
+  <div class="modal fade" id="smallModalcable" tabindex="-1" role="dialog" aria-labelledby="largeModal"
+    aria-hidden="true">
+    <div class="modal-dialog customidialog ">
+      <div class="modal-content-cus">
+        <div class="modal-header">
+          <div class="title-date">
+            <h2>Cancle
+            </h2>
+          </div>
+          <button type="button" class="closenew" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="descrtipn-alert">
+            <h3>Do you Want to Cancle</h3>
+          </div>
+          <div class="modal-footercustom">
+            <button type="button" class="no-btn" data-dismiss="modal">No</button>
+            <button type="button" class="yes-alert">Yes</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Add Diclration Method Modal -->
+  <div class="modal fade" id="smallModaltwo" tabindex="-1" role="dialog" aria-labelledby="largeModal"
+    aria-hidden="true">
+    <div class="modal-dialog customidialog ">
+      <div class="modal-content-cus">
+        <div class="modal-header">
+          <div class="title-date">
+            <h2>Declaration</h2>
+          </div>
+          <button type="button" class="closenew" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="description-modal">
+            <p> am over 18 and declare that the information provided by me during the account opening process is true
+              and
+              correct and undertake to notify you, in writing, if there are any changes to this data. I guarantee that I
+              do
+              not breach any regulations of my country of residence in trading with Promax LLC.
+
+              I fully understand the nature and risks of trading Forex and other derivatives. I confirm I have read,
+              understood and agree to be bound by all the Promax LLC statements, policies and agreements of the
+              Business.
+            </p>
+            <form action="/action_page.php">
+              <input type="checkbox" id="myCheckbox" name="vehicle1" value="Bike">
+              <label for="vehicle1">I confirm I have read, understood and agree to AML Policy, Client Agreement, Fraud
+                Warning, Privacy Policy, Risk Disclaimer and Terms and Conditions agreements. I also confirm that I
+                understand the full nature and risks involved in trading Forex, CFDs and other derivative
+                products.</label>
+
+            </form>
+          </div>
+          <div class="footer-modl">
+            <div class="btnsM">
+              <button class="cls ">Close</button>
+              <button id="loading-button" onclick="startLoading()" disabled>Get now</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script>
+    $("#loading-button").click(function () {
+      var button = $(this);
+
+      var id = button.val();
+
+      button.closest(".shw").modal('hide');
+      $('#editTasks_50').modal('show');
+    });
+  </script>
+  <script>
+    $('#fileup').change(function () {
+      //here we take the file extension and set an array of valid extensions
+      var res = $('#fileup').val();
+      var arr = res.split("\\");
+      var filename = arr.slice(-1)[0];
+      filextension = filename.split(".");
+      filext = "." + filextension.slice(-1)[0];
+      valid = [".jpg", ".png", ".jpeg", ".bmp"];
+      //if file is not valid we show the error icon, the red alert, and hide the submit button
+      if (valid.indexOf(filext.toLowerCase()) == -1) {
+        $(".imgupload").hide("slow");
+        $(".imgupload.ok").hide("slow");
+        $(".imgupload.stop").show("slow");
+
+        $('#namefile').css({ "color": "red", "font-weight": 700 });
+        $('#namefile').html("File " + filename + " is not  pic!");
+
+        $("#submitbtn").hide();
+        $("#fakebtn").show();
+      } else {
+        //if file is valid we show the green alert and show the valid submit
+        $(".imgupload").hide("slow");
+        $(".imgupload.stop").hide("slow");
+        $(".imgupload.ok").show("slow");
+
+        $('#namefile').css({ "color": "green", "font-weight": 700 });
+        $('#namefile').html(filename);
+
+        $("#submitbtn").show();
+        $("#fakebtn").hide();
+      }
+    });
+  </script>
+  <script>
+    /*---==>Custom FIle Upload--==>*/
+    $(".file-upload").each(function () {
+
+      var fI = $(this).children('input'),
+        btn = $(this).children('.btn-upload'),
+        i1 = $(this).children('.i-pic-upload'),
+        i2 = $(this).children('.i-deselect'),
+        dN = "No file Selected",
+        tfN = $(this).find('.text-file-name'),
+        bT = $(this).find('.text-browse');
+      bT.text('Browse...');
+      tfN.text('No file Selected');
+
+      btn.click(function (b) {
+        b.preventDefault();
+        fI.click();
+      });
+      function readURL(input) {
+        if (input.files && input.files[0]) {
+          var reader = new FileReader();
+          reader.onload = function (e) {
+            i1.css("background", "url(" + e.target.result + ") no-repeat center").removeClass('fa fa-camera');
+          }
+          reader.readAsDataURL(input.files[0]);
+        }
+      }
+      fI.change(function (e) {
+        readURL(this);
+        var fN = e.target.files[0].name;
+        tfN.text(fN);
+        i2.fadeIn(200);
+        bT.text('Change...');
+      });
+      i2.click(function () {
+        i2.fadeOut(100);
+        window.setTimeout(function () {
+          i1.css("background", "#ebebeb").addClass('fa fa-camera');
+          bT.text('Browse...');
+          tfN.text('No file Selected');
+          fI.val(null);
+        }, 200);
+
+      });
+    });
+  </script>
+  <script>
+    let index = 1;
+
+    const on = (listener, query, fn) => {
+      document.querySelectorAll(query).forEach(item => {
+        item.addEventListener(listener, el => {
+          fn(el);
+        })
+      })
+    }
+
+    on('click', '.selectBtn', item => {
+      const next = item.target.nextElementSibling;
+      next.classList.toggle('toggle');
+      next.style.zIndex = index++;
+    });
+    on('click', '.option', item => {
+      item.target.parentElement.classList.remove('toggle');
+
+      const parent = item.target.closest('.selectcus').children[0];
+      parent.setAttribute('data-type', item.target.getAttribute('data-type'));
+      parent.innerText = item.target.innerText;
+    })
+  </script>
+
+  <script>
+    
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+  </script>
+  <script>
+    // Notifcations
+
+let profile = document.querySelector('.profile');
+let menu = document.querySelector('.menucus');
+
+profile.onclick = function () {
+    menu.classList.toggle('active');
+}
+  </script>
+</body>
+
+</html>
