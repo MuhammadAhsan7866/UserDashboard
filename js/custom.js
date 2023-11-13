@@ -222,6 +222,23 @@ $(document).ready(function () {
     $('#gateway').hide();
     $('#custom-tec').show();
 
+    // $('#switchButton99').click(function () {
+    //   $('#screen2').hide();
+    //   $('#screen1').hide();
+    //   $('#trading').hide();
+    //   $('#withdraw').hide();
+    //   $('#KYC').hide();
+    //   $('#depostatus').hide();
+    //   $('#withdrawnow').hide();
+    //   $('#Withdrawstatus').hide();
+    //   $('#Analysis').hide();
+    //   $('#custom-tec').hide();
+    //   $('#screen12').hide();
+    //   $('#Deposits').show();
+  
+    // });
+
+    
   });
   // $('#switchButton61').click(function () {
    

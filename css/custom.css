@@ -2166,7 +2166,7 @@ b.bol-text {
 
 
 .tab-content {
-  padding: 80px 0px 20px;
+  padding: 0px 0px 20px;
   width: 100%;
   min-height: 340px;
 }
@@ -2857,6 +2857,38 @@ button.edt {
   cursor: pointer;
 }
 
+.control {
+  background: white;
+  padding: 9px;
+  /* border: coral; */
+  border-radius: 4px;
+}
+.control input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.field label {
+  color: #FA8023;
+  margin: 7px 0px;
+  font-size: 18px;
+  font-weight: 500;
+}
+button.edit_svee {
+  border: none;
+  background: #18723b;
+  padding: 7px 31px;
+  border-radius: 25px;
+  color: white;
+}
+.modal-dialog.customidialogtwo {
+  max-width: 600px;
+  width: 100%;
+}
+.modal_pad {
+  padding-top: 18px;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 580px) {
   .rowarea {
     flex-direction: column-reverse;
@@ -2918,4 +2950,12 @@ button.edt {
   .filters-alerts input {
     width: 100%;
   }
+  .form-trade6 {
+    width: 100%;
+  }
+  .title-table.mt-lg-5 {
+   
+    flex-direction: column;
+    margin-top: 24px;
+}
 }

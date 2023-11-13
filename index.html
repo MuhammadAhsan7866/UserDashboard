@@ -184,7 +184,9 @@
         <nav class="navbar navbar-expand navbar-light topbar mb-4 static-top shadow">
           <!-- Sidebar Toggle (Topbar) -->
          
-
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
           <!-- Topbar Navbar -->
           <div class="avatar_cus">
         <img src="/img/nova.png" alt="" class="nva">
@@ -717,7 +719,7 @@
                                   </td>
                                   <td>Junaid Mirza </td>
                                   <td>
-                                    <button class="edt">Edit</button>
+                                    <button class="edt" data-toggle="modal" data-target="#smallModalfor">Edit</button>
                                   </td>
                                 </tr>
                                 <tr>
@@ -739,7 +741,7 @@
                                   </td>
                                   <td>Junaid Mirza </td>
                                   <td>
-                                    <button class="edt">Edit</button>
+                                    <button class="edt" data-toggle="modal" data-target="#smallModalfor">Edit</button>
                                   </td>
                                 </tr>
                                 <tr>
@@ -761,7 +763,7 @@
                                   </td>
                                   <td>Junaid Mirza </td>
                                   <td>
-                                    <button class="edt">Edit</button>
+                                    <button class="edt" data-toggle="modal" data-target="#smallModalfor">Edit</button>
                                   </td>
                                 </tr>
                                 <tr>
@@ -783,7 +785,7 @@
                                   </td>
                                   <td>Junaid Mirza </td>
                                   <td>
-                                    <button class="edt">Edit</button>
+                                    <button class="edt" data-toggle="modal" data-target="#smallModalfor">Edit</button>
                                   </td>
                                 </tr>
                               </tbody>
@@ -1558,7 +1560,7 @@
                                   <p class="p mb-0 color-text text-w">
                                     Visit to understand the Live Market Situation using the provided tools. </p>
                                   <div class="candles">
-                                    <button class="open-btn mt-lg-4 ">Deposit Now</button>
+                                    <button class="open-btn mt-lg-4 " id="switchButton99">Deposit Now</button>
                                     <img src="/img/deposit-icon.png" alt="deposit" class="mt-4">
                                   </div>
 
@@ -2819,6 +2821,97 @@
     </div>
   </div>
 
+<!-- Edit Fields Modal  -->
+
+
+<div class="modal modal_pad fade" id="smallModalfor" tabindex="-1" role="dialog" aria-labelledby="largeModal"
+aria-hidden="true">
+<div class="modal-dialog customidialogtwo ">
+  <div class="modal-content-cus">
+    <div class="modal-header">
+      <div class="title-date">
+        <h2>Details Edit</h2>
+      </div>
+      <button type="button" class="closenew" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="description-modal-new">
+        <form action="" method="post">
+          <div class="field">
+            <label class="label">ID </label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Your ID">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Account ID</label>
+            <div class="control">
+              <input class="input" type="email" placeholder=" Account ID">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">UserName</label>
+            <div class="control">
+              <input class="input" type="text" placeholder=" UserName">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Account Type</label>
+            <select class="selectpicker form-control frm" title="Selecione uma opçao">
+              <option value="1">Live</option>
+              <option id="">Demo</option>
+            </select>
+          </div>
+          <div class="field">
+            <label class="label">Payment Method	</label>
+            <select class="selectpicker form-control frm" title="Selecione uma opçao">
+              <option value="1">Select Payment Method</option>
+              <option id="switchButton12">Wire transfer</option>
+              <option>Bit Coin</option>
+              <option>Perfect Money</option>
+              <option>USDT / Tether</option>
+              <option>Doge Coin</option>
+              <option>BNB</option>
+              <option>ETH</option>
+              <option>XLM</option>
+              <option>SHIB</option>
+              <option>PROM</option>
+              <option>XRP</option>
+              <option>ADA</option>
+              <option>TRX</option>
+
+            </select>
+          </div>
+          <div class="field">
+            <label class="label">Wallet Adress</label>
+            <div class="control">
+              <input class="input" type="text" placeholder=" Wallet Adress">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Account Title</label>
+            <div class="control">
+              <input class="input" type="text" placeholder=" Account Title">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="footer-modl">
+        <div class="btnsM">
+          <button class="cls ">Close</button>
+          <button class="edit_svee">Save Changes</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+<!-- Edit Field Modal End -->
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
